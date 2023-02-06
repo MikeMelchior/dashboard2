@@ -182,7 +182,55 @@ ul svg {
 
 
 .content {
-    background-color: var(--800);
+    background-color: rgb(142, 225, 255);
+    display: grid;
+    grid: 1fr / 3fr 1fr;
+    gap: 1rem;
+    padding: 2rem 1rem;
 }
+
+    .content p:first-child {
+        font-weight: bold;
+    }
+
+    .left-content {
+
+    }
+        
+        .projects {
+            height: 95%;
+            display: grid;
+            grid: 1fr 1fr 1fr / 1fr 1fr;
+            gap: 1rem;
+        }
+
+            .card {
+                height: 100%;
+                width: 100%;
+                background-color: var(--100);
+                border-left: 8px solid gold;
+                border-radius: 5px;
+                padding: 3rem 2rem;
+                display: grid;
+                grid: 3fr 1fr / 3fr 1fr 1fr 1fr;
+            }
+
+                .card p::first-line {
+                    font-weight: bold;
+                }
+
+                .card p {
+                    width: 80%;
+                    grid-area: 1 / 1 / 2 / 5;
+                }
+
+                .card div:nth-child(1) {
+                    grid-area: 2 / 2 / 3 / 3;
+                }
+
+    .right-content {
+        display: grid;
+        grid: 1fr 1fr / 1fr;
+    }
 
 
