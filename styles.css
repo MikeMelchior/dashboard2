@@ -43,6 +43,16 @@ svg {
     height: 4vh;
 }
 
+.img-placeholder {
+    background-color: #f0f9ff;
+    aspect-ratio: 1/1;
+    height: 10vh;
+    border-radius: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .sidebar {
     background-color: var(--400);
@@ -100,7 +110,6 @@ ul svg {
     }
 
     .header-left {
-        background-color: pink;
         grid-area: 1 / 1 / 2 / 2;
         padding-left: 2rem;        
     }
@@ -121,18 +130,50 @@ ul svg {
                 width: 100%;
                 border-radius: 15px;
             }
+
+        .welcome-section {
+            display: grid;
+            grid: 1fr / 15% 85%;
+            font-size: 4vh;
+        }
     
     .header-right {
-        background-color: royalblue;
         grid-area: 1 / 2 / 2 / 3;
+        padding-right: 2rem;
     }
 
-    
+        .account-options {
+            display: grid;
+            grid: 1fr / 8% 15% 30%;
+            gap: 3%;
+            font-size: 2.5vh;
+            justify-content: end;
+            align-items: center;
+        }
 
-    .account-options {
-        background-color: aliceblue;
-    }
+            .account-options div{
+                height: 6vh;
+                aspect-ratio: 1 / 1;
+                place-self: center;
+            }
+        .header-buttons {
+            display: grid;
+            grid: 1fr / 30% 30% 30%;
+            justify-content: space-between;
+            align-items: center;
+        }
 
+            .button {
+                background-color: var(--800);
+                height: 50%;
+                width: 90%;
+                border-radius: 25px;
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                color: var(--100);
+                font-size: 2vh;
+            }
 
 
 
